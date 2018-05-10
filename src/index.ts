@@ -1,5 +1,5 @@
-export function combineContainers<T>(o: T, callbacks: ((c: T) => any)[]): any {
-  var c = o;
+export function combineContainers<T>(component: T, callbacks: ((c: any) => any)[]): any {
+  var c = component;
   callbacks.forEach(callback => {
     c = callback(c);
   });
