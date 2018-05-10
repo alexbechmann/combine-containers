@@ -1,6 +1,6 @@
 {
   "name": "combine-containers",
-  "version": "0.0.1-pre",
+  "version": "0.0.1-alpha",
   "description": "",
   "main": "dist/index.js",
   "typings": "./dist/index.d.ts",
