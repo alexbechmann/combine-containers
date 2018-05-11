@@ -1,5 +1,10 @@
-export function combineContainers<T>(component: T, callbacks: ((c: any) => any)[]): any {
-  var c = component;
+import * as React from 'react';
+
+export function combineContainers<TComponent extends React.ComponentType<TProps>, TProps>(
+  component: React.ComponentType<TProps>,
+  callbacks: Array<(containerFunctions: React.ComponentType<TProps>) => any>
+): React.ComponentType<any> {
+  let c = component;
   callbacks.forEach(callback => {
     c = callback(c);
   });
