@@ -1,9 +1,11 @@
 # combine-containers
-
-
-
 ![npm](https://img.shields.io/npm/v/combine-containers.svg)
 
+# Installation
+
+```
+npm install combine-containers --save 
+```
 
 Use this function to wrap a component with multiple containers such as react-redux, react-form, material-ui styles etc.
 
