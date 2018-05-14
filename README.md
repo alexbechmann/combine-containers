@@ -31,4 +31,4 @@ export const ContactDialog = combineContainers(ContactDialogComponent, [
 
 ```
 
-Includes TypesSript typings.
+Includes TypesScript typings.
