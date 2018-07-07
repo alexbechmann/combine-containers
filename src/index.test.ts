@@ -10,7 +10,7 @@ describe('combine-containers', () => {
     const addThree = (n: number) => n + 3;
 
     const initial = 5;
-    const result = combineContainers([addOne, addThree])(5);
+    const result = combineContainers(addOne, addThree)(5);
 
     expect(result).to.equal(9);
   });

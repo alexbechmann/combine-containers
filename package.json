@@ -1,13 +1,13 @@
 {
   "name": "combine-containers",
-  "version": "0.1.0-alpha",
+  "version": "0.1.1-alpha",
   "description": "",
   "main": "dist/index.js",
   "typings": "./dist/index.d.ts",
   "scripts": {
     "test": "mocha --reporter spec --compilers ts:ts-node/register src/**/*.test.ts",
     "build": "webpack",
-    "prepare": "npm run build"
+    "prepare": "npm test && npm run build"
   },
   "author": "Alex Bechmann",
   "license": "ISC",
