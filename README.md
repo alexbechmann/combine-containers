@@ -11,23 +11,23 @@ Use this function to wrap a component with multiple containers such as react-red
 
 # Usage
 
-```
+```tsx
 import { combineContainers } from 'combine-containers';
 
-const ContactDialogComponent: props => (
+const ContactDialog: props => (
   <div>
     ...
   </div>
 );
 
-export const ContactDialog = combineContainers(ContactDialogComponent, [
+export default combineContainers(
   connect(mapStateToProps, mapDispatchToProps),
   reduxForm({
     form: 'contactForm',
     destroyOnUnmount: false
   }),
   withStyles(styles, { withTheme: true })
-]);
+])(ContactDialog);
 
 ```
 
