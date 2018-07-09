@@ -14,7 +14,7 @@ Use this function to wrap a component with multiple containers such as react-red
 ```tsx
 import { combineContainers } from 'combine-containers';
 
-const ContactDialog: props => (
+const ContactDialog = props => (
   <div>
     ...
   </div>
